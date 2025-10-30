@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - n0t</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: #000;
+            color: #fff;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+
+        h3 {
+            font-size: 24px;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 32px;
+            margin: 24px 0;
+        }
+
+        .contact-card h3 {
+            margin-top: 0;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+
+        .faq-question {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .faq-answer {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: #fff;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 6px 12px;
+            background: rgba(0, 255, 0, 0.1);
+            border: 1px solid rgba(0, 255, 0, 0.3);
+            border-radius: 20px;
+            color: #0f0;
+            font-size: 14px;
+            font-weight: 600;
+            margin-left: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Support</h1>
+
+        <div class="contact-card">
+            <h3>Need Help?</h3>
+            <p>We're here to help! Reach out to us:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:n0t.app@outlook.com">n0t.app@outlook.com</a></li>
+                <li><strong>Response time:</strong> Usually within 24 hours</li>
+            </ul>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I delete my account?</div>
+            <div class="faq-answer">
+                Go to Settings → Account → Clear All Data. This will permanently delete all your conversations and data. You can also email us at n0t.app@outlook.com to request account deletion.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I manage my subscription?</div>
+            <div class="faq-answer">
+                Subscriptions are managed through your Apple ID. Go to Settings → [Your Name] → Subscriptions on your iPhone to manage or cancel your n0t subscription.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Is my data private?</div>
+            <div class="faq-answer">
+                Yes! Your conversations are encrypted in transit and stored securely with Firebase. We never sell your data. See our <a href="privacy.html">Privacy Policy</a> for full details.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I export my conversation history?</div>
+            <div class="faq-answer">
+                Currently, you can view all your conversations in the Memory Calendar. Export functionality is coming soon. Email us at n0t.app@outlook.com if you need your data exported.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What AI model does n0t use?</div>
+            <div class="faq-answer">
+                n0t is powered by Anthropic's Claude AI, one of the most advanced conversational AI models available.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Why isn't voice recording working?</div>
+            <div class="faq-answer">
+                Make sure you've granted microphone permissions to n0t. Go to Settings → n0t → Microphone and enable it. Voice is the main way to talk with n0t. If it still doesn't work, try restarting the app.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can I use n0t offline?</div>
+            <div class="faq-answer">
+                No, n0t requires an internet connection to communicate with Claude AI and sync your data. We're exploring offline features for future updates.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I reset a session?</div>
+            <div class="faq-answer">
+                Tap the reset button (circular arrow icon) in the session controls at the top of the screen. This will start a fresh session while keeping your context.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What's the difference between Context and Tracking?</div>
+            <div class="faq-answer">
+                <strong>Context</strong> sets the vibe for your conversation - background info n0t should remember during the session (voice or text input).<br>
+                <strong>Tracking</strong> is for specific problems or goals you want to monitor over time with visual timelines (voice or text input).<br>
+                Main conversations with n0t are voice-only.
+            </div>
+        </div>
+
+        <h2>Report a Bug</h2>
+        <p>Found a bug? Help us improve n0t:</p>
+        <ul>
+            <li>Email: <a href="mailto:n0t.app@outlook.com">n0t.app@outlook.com</a></li>
+            <li>Include your iOS version and device model</li>
+            <li>Describe what happened and what you expected</li>
+            <li>Screenshots are super helpful!</li>
+        </ul>
+
+        <h2>Feature Requests</h2>
+        <p>Got an idea to make n0t better?</p>
+        <ul>
+            <li>Email: <a href="mailto:n0t.app@outlook.com">n0t.app@outlook.com</a></li>
+            <li>We read every suggestion</li>
+        </ul>
+
+        <h2>System Status <span class="status-badge">All Systems Operational</span></h2>
+        <p>Current status of n0t services:</p>
+        <ul>
+            <li>✅ API - Operational</li>
+            <li>✅ Authentication - Operational</li>
+            <li>✅ Database - Operational</li>
+            <li>✅ AI Processing - Operational</li>
+        </ul>
+
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+</body>
+</html>

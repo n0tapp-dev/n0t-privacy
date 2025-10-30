@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - n0t</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: #000;
+            color: #fff;
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+            animation: pulse 15s ease-in-out infinite;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #aaa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInDown 0.6s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .last-updated {
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+
+        h3 {
+            font-size: 24px;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last updated: October 30, 2025</p>
+
+        <h2>Introduction</h2>
+        <p>n0t ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.</p>
+
+        <h2>Information We Collect</h2>
+
+        <h3>Personal Information</h3>
+        <p>When you use n0t, we may collect:</p>
+        <ul>
+            <li>Email address (for authentication)</li>
+            <li>User ID (generated automatically)</li>
+            <li>Device information (iOS version, device model)</li>
+        </ul>
+
+        <h3>Conversation Data</h3>
+        <p>n0t stores your voice conversations and context to provide its core functionality:</p>
+        <ul>
+            <li>Voice conversation transcripts and AI responses</li>
+            <li>Context and memory settings (voice or text input)</li>
+            <li>Problem tracking data (voice or text input)</li>
+            <li>Session timestamps and metadata</li>
+        </ul>
+
+        <h3>Analytics Data</h3>
+        <p>We collect anonymous usage analytics to improve the app:</p>
+        <ul>
+            <li>Feature usage patterns</li>
+            <li>Screen views and interactions</li>
+            <li>App performance metrics</li>
+            <li>Error logs and crash reports</li>
+        </ul>
+
+        <h2>How We Use Your Information</h2>
+        <p>We use your information to:</p>
+        <ul>
+            <li>Provide and maintain the n0t service</li>
+            <li>Remember your conversations and context</li>
+            <li>Improve app functionality and user experience</li>
+            <li>Send you important service updates</li>
+            <li>Respond to your support requests</li>
+            <li>Analyze app usage and performance</li>
+        </ul>
+
+        <h2>Data Storage and Security</h2>
+        <p>Your data is stored securely using Firebase and Google Cloud Platform:</p>
+        <ul>
+            <li>All data is encrypted in transit using HTTPS</li>
+            <li>Conversation data is stored in Firebase Firestore</li>
+            <li>Authentication is handled by Firebase Auth</li>
+            <li>We implement industry-standard security measures</li>
+        </ul>
+
+        <h2>AI Processing</h2>
+        <p>n0t uses Anthropic's Claude AI to process your conversations:</p>
+        <ul>
+            <li>Your messages are sent to Anthropic's API for processing</li>
+            <li>Anthropic processes your data according to their privacy policy</li>
+            <li>We do not train AI models on your personal conversations</li>
+        </ul>
+
+        <h2>Third-Party Services</h2>
+        <p>n0t uses the following third-party services:</p>
+        <ul>
+            <li><strong>Firebase/Google Cloud:</strong> Data storage and authentication</li>
+            <li><strong>Anthropic Claude:</strong> AI conversation processing</li>
+            <li><strong>RevenueCat:</strong> Subscription management</li>
+        </ul>
+
+        <h2>Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+            <li>Access your personal data</li>
+            <li>Delete your account and all associated data</li>
+            <li>Export your conversation history</li>
+            <li>Opt out of analytics collection</li>
+            <li>Request correction of inaccurate data</li>
+        </ul>
+
+        <h2>Data Retention</h2>
+        <p>We retain your data:</p>
+        <ul>
+            <li>Conversation data: Until you delete it or close your account</li>
+            <li>Account data: Until you request deletion</li>
+            <li>Analytics data: Aggregated and anonymized after 90 days</li>
+        </ul>
+
+        <h2>Children's Privacy</h2>
+        <p>n0t is not intended for users under 16 years of age. We do not knowingly collect information from children under 16. If you believe we have collected information from a child under 16, please contact us at n0t.app@outlook.com immediately.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last updated" date and, for significant changes, by sending you a notification through the app.</p>
+
+        <h2>Contact Us</h2>
+        <p>If you have questions about this Privacy Policy, please contact us:</p>
+        <ul>
+            <li>Email: <a href="mailto:n0t.app@outlook.com">n0t.app@outlook.com</a></li>
+            <li>Support: <a href="support.html">n0tapp-dev.github.io/n0t-privacy/support</a></li>
+        </ul>
+
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+</body>
+</html>
