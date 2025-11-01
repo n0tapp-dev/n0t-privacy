@@ -135,13 +135,15 @@
         </ul>
 
         <h3>Conversation Data</h3>
-        <p>n0t stores your voice conversations and context to provide its core functionality:</p>
+        <p>n0t stores your conversations and memories locally on your device:</p>
         <ul>
-            <li>Voice conversation transcripts and AI responses</li>
-            <li>Context and memory settings (voice or text input)</li>
-            <li>Problem tracking data (voice or text input)</li>
+            <li>Voice and text conversation transcripts and AI responses</li>
+            <li>Facts, entities, and memories you create</li>
+            <li>Uploaded documents (PDFs, images)</li>
+            <li>AR Vision scan history</li>
             <li>Session timestamps and metadata</li>
         </ul>
+        <p>All conversation data is encrypted and stored locally on your device. Your data is never shared or sold to third parties.</p>
 
         <h3>Analytics Data</h3>
         <p>We collect anonymous usage analytics to improve the app:</p>
@@ -164,28 +166,31 @@
         </ul>
 
         <h2>Data Storage and Security</h2>
-        <p>Your data is stored securely using Firebase and Google Cloud Platform:</p>
+        <p>Your data is stored securely:</p>
         <ul>
-            <li>All data is encrypted in transit using HTTPS</li>
-            <li>Conversation data is stored in Firebase Firestore</li>
+            <li>All conversation data is encrypted and stored locally on your device using AES-256 encryption</li>
+            <li>Data is protected when your device is locked (iOS FileProtection.complete)</li>
+            <li>Encryption keys are stored securely in your device's Keychain</li>
             <li>Authentication is handled by Firebase Auth</li>
             <li>We implement industry-standard security measures</li>
         </ul>
 
         <h2>AI Processing</h2>
-        <p>n0t uses Anthropic's Claude AI to process your conversations:</p>
+        <p>n0t uses OpenAI's GPT-4o to process your conversations:</p>
         <ul>
-            <li>Your messages are sent to Anthropic's API for processing</li>
-            <li>Anthropic processes your data according to their privacy policy</li>
+            <li>Your messages are sent to OpenAI's API for processing</li>
+            <li>OpenAI processes your data according to their privacy policy</li>
             <li>We do not train AI models on your personal conversations</li>
+            <li>Voice responses use OpenAI's text-to-speech (TTS) service</li>
+            <li>AR Vision uses OpenAI's GPT-4o Vision for image analysis</li>
         </ul>
 
         <h2>Third-Party Services</h2>
         <p>n0t uses the following third-party services:</p>
         <ul>
-            <li><strong>Firebase/Google Cloud:</strong> Data storage and authentication</li>
-            <li><strong>Anthropic Claude:</strong> AI conversation processing</li>
-            <li><strong>RevenueCat:</strong> Subscription management</li>
+            <li><strong>Firebase Auth:</strong> User authentication only (no data storage)</li>
+            <li><strong>OpenAI GPT-4o:</strong> AI conversation processing, text-to-speech, and vision analysis</li>
+            <li><strong>RevenueCat:</strong> Subscription and payment management</li>
         </ul>
 
         <h2>Your Rights</h2>
@@ -201,8 +206,9 @@
         <h2>Data Retention</h2>
         <p>We retain your data:</p>
         <ul>
-            <li>Conversation data: Until you delete it or close your account</li>
-            <li>Account data: Until you request deletion</li>
+            <li>Conversation data: Stored locally on your device. Free tier: 30 days, Premium: 90 days</li>
+            <li>Older conversations are automatically deleted based on your subscription tier</li>
+            <li>Account data: Until you request deletion via the app or email</li>
             <li>Analytics data: Aggregated and anonymized after 90 days</li>
         </ul>
 
